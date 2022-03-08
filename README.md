@@ -13,6 +13,17 @@ The app will allow you to:
 
 - Ruby
 
+## Installation guide
+
+Clone this repository using
+`git clone https://github.com/anuarshaidenov/school-library.git`
+
+cd into the repository
+`cd school-library`
+
+run files with
+`ruby FILENAME`
+
 ## Authors
 
 👤 **Anuar Shaidenov**
