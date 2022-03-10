@@ -1,8 +1,10 @@
 require './decorator'
+require './rental'
+require './book.rb'
 
 class Person < Nameable
-  attr_reader :id, :rentals
-  attr_accessor :name, :age
+  attr_reader :id
+  attr_accessor :name, :age, :rentals
 
   def initialize(age, name = 'unknown', parent_permission: true)
     super()
@@ -21,7 +23,8 @@ class Person < Nameable
     @name
   end
 
-  def add_rental(rental)
+  def add_rental(date, book)
+    rental = Rental.new(date, book, self)
     @rentals << rental
   end
 
