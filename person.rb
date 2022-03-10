@@ -1,6 +1,6 @@
 require './decorator'
 require './rental'
-require './book.rb'
+require './book'
 
 class Person < Nameable
   attr_reader :id
